@@ -14,7 +14,7 @@ namespace WhiteboardChallenges2
         //Constructor
         public HighAndLow()
         {
-            intsString = "3 9 0 1 4 8 10 2";
+            intsString = "3 9 0 1 4 8 29 2";
         }
 
         //Member Methods (CAN DO)

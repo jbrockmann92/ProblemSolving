@@ -10,13 +10,12 @@ namespace WhiteboardChallenges2
     {
         static void Main(string[] args)
         {
-            HighAndLow high = new HighAndLow();
-            List<int> list = new List<int>();
-            list = high.ConvertToInt();
-            string complete = high.HighLow(list);
+            EmailTest email = new EmailTest();
 
-            Console.WriteLine($"{complete}");
+            email.GetEmail();
+            email.TestEmail(email.charEmail);
             Console.ReadLine();
+
         }
     }
 }

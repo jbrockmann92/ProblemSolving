@@ -10,7 +10,11 @@ namespace WhiteboardChallenges2
     {
         static void Main(string[] args)
         {
-            
+            IncrementingInts incrementing = new IncrementingInts();
+
+            incrementing.CanListIncrement(incrementing.testList1);
+            Console.WriteLine($"{incrementing.canIncrement}");
+            Console.ReadLine();
         }
     }
 }

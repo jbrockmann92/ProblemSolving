@@ -16,8 +16,8 @@ namespace WhiteboardChallenges2
         //Constructor
         public BriefcaseChallenge()
         {
-            combination = new int[4] { 1, 2, 3, 4};
-            currentCombination = new int[4] { 2, 7, 4, 5 };
+            combination = new int[4] { 3, 8, 9, 3};
+            currentCombination = new int[4] { 5, 2, 9, 6 };
         }
 
         //Member Methods

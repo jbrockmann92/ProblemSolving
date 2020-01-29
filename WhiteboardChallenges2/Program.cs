@@ -10,12 +10,12 @@ namespace WhiteboardChallenges2
     {
         static void Main(string[] args)
         {
-            NegativeAndPositive neg = new NegativeAndPositive();
+            HighAndLow high = new HighAndLow();
+            List<int> list = new List<int>();
+            list = high.ConvertToInt();
+            string complete = high.HighLow(list);
 
-            neg.CountPositive();
-            neg.AddNegative();
-
-            Console.WriteLine($"{neg.negPos[0]}, {neg.negPos[1]}");
+            Console.WriteLine($"{complete}");
             Console.ReadLine();
         }
     }

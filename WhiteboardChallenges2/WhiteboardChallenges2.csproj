@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ArrayTester.cs" />
     <Compile Include="BriefcaseChallenge.cs" />
+    <Compile Include="HighAndLow.cs" />
     <Compile Include="IncrementingInts.cs" />
     <Compile Include="NegativeAndPositive.cs" />
     <Compile Include="Program.cs" />

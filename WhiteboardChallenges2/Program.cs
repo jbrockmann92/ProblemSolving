@@ -10,7 +10,13 @@ namespace WhiteboardChallenges2
     {
         static void Main(string[] args)
         {
+            NegativeAndPositive neg = new NegativeAndPositive();
 
+            neg.CountPositive();
+            neg.AddNegative();
+
+            Console.WriteLine($"{neg.negPos[0]}, {neg.negPos[1]}");
+            Console.ReadLine();
         }
     }
 }

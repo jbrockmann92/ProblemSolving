@@ -38,13 +38,17 @@ namespace WhiteboardChallenges2
         {
             for (int i = 0; i < combination.Length; i++)
             {
-                if (currentCombination[i] - combination[i] <= 5)
+                if (currentCombination[i] - combination[i] <= 5 && currentCombination[i] - combination[i] > 0)
                 {
                     totalMoves += (currentCombination[i] - combination[i]);
                 }
-                else
+                else if (currentCombination[i] - combination[i] > 5)
                 {
                     totalMoves += ((9 - currentCombination[i]) + combination[i] + 1);
+                }
+                else if (currentCombination[i] - combination[i] < 0)
+                {
+                    totalMoves += (combination[i] - currentCombination[i]);
                 }
             }
 

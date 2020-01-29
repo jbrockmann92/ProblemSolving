@@ -46,6 +46,7 @@
     <Compile Include="ArrayTester.cs" />
     <Compile Include="BriefcaseChallenge.cs" />
     <Compile Include="IncrementingInts.cs" />
+    <Compile Include="NegativeAndPositive.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReciprocalReverse.cs" />

@@ -10,8 +10,8 @@ namespace WhiteboardChallenges2
     {
         static void Main(string[] args)
         {
-            Averager averager = new Averager();
-            averager.GetAverage();
+            AscendingOrder ascendingOrder = new AscendingOrder();
+            ascendingOrder.OrderAscending();
             Console.ReadLine();
         }
     }

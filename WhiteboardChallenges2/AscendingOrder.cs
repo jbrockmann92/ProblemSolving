@@ -20,7 +20,17 @@ namespace WhiteboardChallenges2
         //Member Methods (CAN DO)
         public void OrderAscending()
         {
+            //Should be able to keep O(n) lower by copying the array instead of iterating over it twice. Want to avoid a nested for loop if possible
+            int[] arrayCopy = array;
+            int[] arrayResult = new int[array.Length];
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] < arrayCopy[i])
+                {
 
+                }
+                    //Need to set so that it only takes the lowest item first, then the second, etc.
+            }
         }
 
     }

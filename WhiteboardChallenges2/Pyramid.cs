@@ -9,7 +9,7 @@ namespace WhiteboardChallenges2
     class Pyramid
     {
         //Member Variables (HAS A)
-        char star = '*';
+        string star = "* ";
 
         //Member Methods (CAN DO)
         public void CreatePyramid()
@@ -17,8 +17,11 @@ namespace WhiteboardChallenges2
             //Print a pyriamid of four levels of asterisks
             for (int i = 1; i < 5; i++)
             {
-                Console.WriteLine('*');
-                Console.WriteLine(' ');
+                for (int j = 5; j > 0; j--)
+                {
+                    Console.Write(string.Concat(Enumerable.Repeat(" ", i)));
+                    Console.Write(string.Concat(Enumerable.Repeat("* ", j)));
+                }
             }
             Console.ReadLine();
         }

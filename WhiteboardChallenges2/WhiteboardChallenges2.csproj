@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayTester.cs" />
+    <Compile Include="AscendingOrder.cs" />
     <Compile Include="Averager.cs" />
     <Compile Include="BriefcaseChallenge.cs" />
     <Compile Include="EmailTest.cs" />

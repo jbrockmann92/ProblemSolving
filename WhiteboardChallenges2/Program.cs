@@ -10,9 +10,8 @@ namespace WhiteboardChallenges2
     {
         static void Main(string[] args)
         {
-            AscendingOrder ascendingOrder = new AscendingOrder();
-            ascendingOrder.OrderAscending();
-            Console.ReadLine();
+            Pyramid pyramid = new Pyramid();
+            pyramid.CreatePyramid();
         }
     }
 }

@@ -15,7 +15,12 @@ namespace WhiteboardChallenges2
         public void CreatePyramid()
         {
             //Print a pyriamid of four levels of asterisks
-            for (int i = )
+            for (int i = 1; i < 5; i++)
+            {
+                Console.WriteLine('*');
+                Console.WriteLine(' ');
+            }
+            Console.ReadLine();
         }
     }
 }

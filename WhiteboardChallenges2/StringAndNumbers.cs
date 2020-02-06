@@ -45,7 +45,7 @@ namespace WhiteboardChallenges2
         //Should be able to add use built-in values, but this should work as well
 
         //Member Methods (CAN DO)
-        public char[] ConvertToCharArray(string input)
+        public char[] ConvertToCharArray()
         {
             char[] result;
             Console.WriteLine("What would you like converted?");
@@ -59,7 +59,7 @@ namespace WhiteboardChallenges2
 
         public string ConvertToIntString(char[] input)
         {
-            string result;
+            string result = "";
             int charValue;
 
             //Convert spaces to 0 with spaces around? Or leave spaces?
@@ -68,14 +68,11 @@ namespace WhiteboardChallenges2
                 if (letterValueDictionary.ContainsValue(input[i]))
                 {
                     //Want to charValue to be assigned the key that corresponds to the value at input[i]
-                    charValue = letterValueDictionary.
-                    result += 
+                    charValue = letterValueDictionary.FirstOrDefault(x => x.Value == input[i]).Key;
+                    result += " " + charValue;
                 }
             }
-
-
             return result;
         }
-
     }
 }

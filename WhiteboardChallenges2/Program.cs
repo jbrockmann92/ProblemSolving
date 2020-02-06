@@ -10,12 +10,9 @@ namespace WhiteboardChallenges2
     {
         static void Main(string[] args)
         {
-            EmailTest email = new EmailTest();
-
-            email.GetEmail();
-            email.TestEmail(email.charEmail);
+            StringAndNumbers stringAndNumbers = new StringAndNumbers();
+            Console.WriteLine(stringAndNumbers.ConvertToIntString(stringAndNumbers.ConvertToCharArray()));
             Console.ReadLine();
-
         }
     }
 }

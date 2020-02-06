@@ -8,10 +8,8 @@ namespace WhiteboardChallenges2
 {
     class AscendingOrder
     {
-        //Member Variables (HAS A)
         int[] array;
 
-        //Constructor
         public AscendingOrder()
         {
             array = new int[10];
@@ -27,7 +25,6 @@ namespace WhiteboardChallenges2
             array[9] = 71;
         }
 
-        //Member Methods (CAN DO)
         public void OrderAscending()
         {
             for (int j = 1; j < array.Length; j++)

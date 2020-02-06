@@ -30,22 +30,22 @@ namespace WhiteboardChallenges2
         //Member Methods (CAN DO)
         public void OrderAscending()
         {
-            List<int> resultList = new List<int>();
-            for (int i = 0; i < array.Length; i++)
+            for (int j = 1; j < array.Length; j++)
             {
-                for (int j = 1; j < array.Length; j++)
+                for (int k = 0; k < array.Length; k++)
                 {
-                    for (int k = 0; k < array.Length; k++)
+                    if (array[j] < array[k])
                     {
-                        if (array[j] < array[k] && array[j] > array[j-1])
-                        {
-                            resultList.Add(array[j]);
-                        }
+                        int temp = array[j];
+                        array[j] = array[k];
+                        array[k] = temp;
                     }
                 }
             }
-            Console.WriteLine(resultList.Count);
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+            }
         }
-
     }
 }

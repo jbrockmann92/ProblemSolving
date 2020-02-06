@@ -30,16 +30,14 @@ namespace WhiteboardChallenges2
         //Member Methods (CAN DO)
         public void OrderAscending()
         {
-            //Should be able to keep O(n) lower by copying the array instead of iterating over it twice. Want to avoid a nested for loop if possible
-            //Could do it with a double nested loop, by saying that it has to run until a variable reaches 10, and that variable only increments when it adds an item to the resulting array
             List<int> resultList = new List<int>();
             for (int i = 0; i < array.Length; i++)
             {
-                for (int j = 0; j < array.Length; j++)
+                for (int j = 1; j < array.Length; j++)
                 {
                     for (int k = 0; k < array.Length; k++)
                     {
-                        if (j < k)
+                        if (array[j] < array[k] && array[j] > array[j-1])
                         {
                             resultList.Add(array[j]);
                         }

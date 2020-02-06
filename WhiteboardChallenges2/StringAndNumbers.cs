@@ -57,5 +57,25 @@ namespace WhiteboardChallenges2
         //Need to make sure I don't convert spaces to anything?
         //Convert the whole thing to a string. Assign to 'result'
 
+        public string ConvertToIntString(char[] input)
+        {
+            string result;
+            int charValue;
+
+            //Convert spaces to 0 with spaces around? Or leave spaces?
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (letterValueDictionary.ContainsValue(input[i]))
+                {
+                    //Want to charValue to be assigned the key that corresponds to the value at input[i]
+                    charValue = letterValueDictionary.
+                    result += 
+                }
+            }
+
+
+            return result;
+        }
+
     }
 }

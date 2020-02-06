@@ -22,7 +22,7 @@ namespace WhiteboardChallenges2
                 number += numInput;
             }
             result = number / numOfNumbers;
-            Console.WriteLine(result);
+            Console.WriteLine($"Your average of the {numOfNumbers} numbers you entered is {result}");
         }
     }
 }

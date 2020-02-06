@@ -10,8 +10,8 @@ namespace WhiteboardChallenges2
     {
         static void Main(string[] args)
         {
-            StringAndNumbers stringAndNumbers = new StringAndNumbers();
-            Console.WriteLine(stringAndNumbers.ConvertToIntString(stringAndNumbers.ConvertToCharArray()));
+            Averager averager = new Averager();
+            averager.GetAverage();
             Console.ReadLine();
         }
     }
